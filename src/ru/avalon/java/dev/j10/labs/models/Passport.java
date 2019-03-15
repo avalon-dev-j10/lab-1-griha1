@@ -15,7 +15,56 @@ package ru.avalon.java.dev.j10.labs.models;
  *  <li> орган, выдавший документ.
  * </ol>
  */
-class Passport {
+public class Passport { // модификатор доступа паблик дает доступ за пределами пакета
+    /*
+    ниже указываем атрибуты класса паспорт.
+    атрибут второго имени сделал другого типа, чтобы можно было перегрузить 
+    конструктор в том случае когда количество атрибутов совпадает,
+    а их состав - нет (в частности, когда у человека нет отчества,
+    но есть второе имя и когда есть имя фамилия и отчество. В этих двух
+    случаях если второе имя тоже стринг, то типы и количество параметров
+    совпадут и конструктор не перегрузится)
+    */
+    String SerAndNumb;
+    String Name;
+    String Surname;
+    String Patroname;
+    char SecName;
+    String BirthDate;
+    String IssueDate;
+    String IssueOff;
+    
+    public Passport(String SerAndNumb, String Name, String Surname,
+            String BirthDate, String IssueDate, String IssueOff){
+        this.SerAndNumb = SerAndNumb;
+        this.Name = Name;
+        this.Surname = Surname;
+        this.BirthDate = BirthDate;
+        this.IssueDate = IssueDate;
+        this.IssueOff = IssueOff;
+    }
+    public Passport(String SerAndNumb,String Name, String Surname,
+            String Patroname, String BirthDate, String IssueDate,
+            String IssueOff){
+        this.SerAndNumb = SerAndNumb;
+        this.Name = Name;
+        this.Surname = Surname;
+        this.Patroname = Patroname;
+        this.BirthDate = BirthDate;
+        this.IssueDate = IssueDate;
+        this.IssueOff = IssueOff;
+    }
+    public Passport(String SerAndNumb,String Name, String Surname,
+            char SecName, String BirthDate, String IssueDate,
+            String IssueOff){
+        this.SerAndNumb = SerAndNumb;
+        this.Name = Name;
+        this.Surname = Surname;
+        this.SecName = SecName;
+        this.BirthDate = BirthDate;
+        this.IssueDate = IssueDate;
+        this.IssueOff = IssueOff;
+}
 
     /*
      * TODO(Студент): Закончить определение класса.

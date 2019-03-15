@@ -4,14 +4,10 @@ import ru.avalon.java.dev.j10.labs.models.Person;
 
 public class Main {
 
-    Main() {
+    public static void Main(String args []) {
 
-        /*
-         * FIXME(Студент): Измените определение метода так, чтобы он стал точкой входа в приложение.
-         */
-
-        Person ivanov = null;
-        Person smith = null;
+        Person ivanov = new Person(); // создается объект Иванов - экземпляр класса Персон
+        Person smith = new Person(); // создается объект Смит - экземпляр класса Персон
 
         /*
          * TODO(Студент): Создайте экземпляры класса 'Person'
@@ -24,7 +20,12 @@ public class Main {
          *    чтобы она адресовала объект типа 'Person'
          *    описывающий человека по имени 'John Edvard Smith'.
          */
-
+        
+        ivanov.FullName = "Иванов Иван Иванович";
+        smith.FullName = "John Edvard Smith";
+        ivanov.Address = "Какой-то адресс";
+        smith.Address = "Somewhat address";
+        
         /*
          * TODO(Студент): Создайте несколько строковых переменных:
          *
