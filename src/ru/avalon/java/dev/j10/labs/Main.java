@@ -1,12 +1,17 @@
 package ru.avalon.java.dev.j10.labs;
 
+import ru.avalon.java.dev.j10.labs.models.Passport;
 import ru.avalon.java.dev.j10.labs.models.Person;
 
 public class Main {
 
-    public static void Main(String args []) {
+    /**
+     *
+     * @param args
+     */
+    public static void main(String args []) {
 
-        Person ivanov = new Person(); // создается объект Иванов - экземпляр класса Персон
+        Person ivanov = new Person("Иван", ); // создается объект Иванов - экземпляр класса Персон
         Person smith = new Person(); // создается объект Смит - экземпляр класса Персон
 
         /*
@@ -21,10 +26,12 @@ public class Main {
          *    описывающий человека по имени 'John Edvard Smith'.
          */
         
-        ivanov.FullName = "Иванов Иван Иванович";
-        smith.FullName = "John Edvard Smith";
-        ivanov.Address = "Какой-то адресс";
-        smith.Address = "Somewhat address";
+        Passport ivanovP = new Passport (" ", "Иван", "Иванов", "Иванович", " ", " ", " " );
+        Passport smithP = new Passport (" ", "John", "Smith", 'E', " ", " ", " " );
+       
+        
+        String fullName;
+        String adress; 
         
         /*
          * TODO(Студент): Создайте несколько строковых переменных:
