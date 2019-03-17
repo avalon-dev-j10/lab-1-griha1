@@ -1,5 +1,4 @@
 package ru.avalon.java.dev.j10.labs.models;
-
 /**
  * Представление о человеке.
  * <p>
@@ -17,13 +16,25 @@ public class Person {
     объявляем атрибуты класса, в их числе Полное имя и Адрес, которые
     инициализируются в классе Мэйн после создания объектов класса Персон 
     */
-      public String FullName;
-      public String Address;
+      public String fullName;
       public Passport passport; 
-        
+      public String address; 
 
-        
+      public Person (String serN, String name, String surname, String patroname, 
+              String bd, String issD, String issOff){
+          this.passport = new Passport(serN, name, surname, patroname, bd, issD, issOff);
+          this.fullName = name + " " + surname + " " + patroname;
     }
+      public Person (String serN, String name, String surname, 
+              String bd, String issD, String issOff){
+          this.passport = new Passport(serN, name, surname, bd, issD, issOff);
+          this.fullName = name + " " + surname;
+      }
+      public Person (String serN, String name, String surname, char secName, 
+              String bd, String issD, String issOff){
+          this.passport = new Passport(serN, name, surname, secName, bd, issD, issOff);
+          this.fullName = name + " " + secName + "." + " " + surname;
+      }
     /**
      * Возврвщает полное имя человека.
      * <p>
@@ -45,7 +56,7 @@ public class Person {
         /*
          * TODO(Студент): Закончить определение метода 'getFullName()' класса 'Person'
          */
-        return FullName;
+        return fullName;
     }
 
     /**
@@ -60,6 +71,6 @@ public class Person {
         /*
          * TODO(Студент): Закончить определение метода 'getAddress()' класса 'Person'
          */
-        return Address;
+        return address;
     }
 }

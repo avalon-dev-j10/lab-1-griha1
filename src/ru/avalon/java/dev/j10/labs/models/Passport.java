@@ -25,45 +25,45 @@ public class Passport { // модификатор доступа паблик д
     случаях если второе имя тоже стринг, то типы и количество параметров
     совпадут и конструктор не перегрузится)
     */
-    String SerAndNumb;
-    String Name;
-    String Surname;
-    String Patroname;
-    char SecName;
-    String BirthDate;
-    String IssueDate;
-    String IssueOff;
+    String serAndNumb;
+    String name;
+    String surname;
+    String patroname;
+    char secName;
+    String birthDate;
+    String issueDate;
+    String issueOff;
     
-    public Passport(String SerAndNumb, String Name, String Surname,
-            String BirthDate, String IssueDate, String IssueOff){
-        this.SerAndNumb = SerAndNumb;
-        this.Name = Name;
-        this.Surname = Surname;
-        this.BirthDate = BirthDate;
-        this.IssueDate = IssueDate;
-        this.IssueOff = IssueOff;
+    public Passport(String serAndNumb, String name, String surname,
+            String birthDate, String issueDate, String issueOff){
+        this.serAndNumb = serAndNumb;
+        this.name = name;
+        this.surname = surname;
+        this.birthDate = birthDate;
+        this.issueDate = issueDate;
+        this.issueOff = issueOff;
     }
-    public Passport(String SerAndNumb,String Name, String Surname,
-            String Patroname, String BirthDate, String IssueDate,
-            String IssueOff){
-        this.SerAndNumb = SerAndNumb;
-        this.Name = Name;
-        this.Surname = Surname;
-        this.Patroname = Patroname;
-        this.BirthDate = BirthDate;
-        this.IssueDate = IssueDate;
-        this.IssueOff = IssueOff;
+    public Passport(String serAndNumb, String name, String surname,
+            String patroname, String birthDate, String issueDate,
+            String issueOff){
+        this.serAndNumb = serAndNumb;
+        this.name = name;
+        this.surname = surname;
+        this.patroname = patroname;
+        this.birthDate = birthDate;
+        this.issueDate = issueDate;
+        this.issueOff = issueOff;
     }
-    public Passport(String SerAndNumb,String Name, String Surname,
-            char SecName, String BirthDate, String IssueDate,
-            String IssueOff){
-        this.SerAndNumb = SerAndNumb;
-        this.Name = Name;
-        this.Surname = Surname;
-        this.SecName = SecName;
-        this.BirthDate = BirthDate;
-        this.IssueDate = IssueDate;
-        this.IssueOff = IssueOff;
+    public Passport(String serAndNumb, String name, String surname,
+            char secName, String birthDate, String issueDate,
+            String issueOff){
+        this.serAndNumb = serAndNumb;
+        this.name = name;
+        this.surname = surname;
+        this.secName = secName;
+        this.birthDate = birthDate;
+        this.issueDate = issueDate;
+        this.issueOff = issueOff;
 }
 
     /*
