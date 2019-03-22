@@ -21,19 +21,28 @@ public class Person {
       public String address; 
 
       public Person (String serN, String name, String surname, String patroname, 
-              String bd, String issD, String issOff){
+              String bd, String issD, String issOff, String country, String city,
+              String street, String building, String app){
           this.passport = new Passport(serN, name, surname, patroname, bd, issD, issOff);
           this.fullName = name + " " + surname + " " + patroname;
+          this.address = country + ", " + city + ", " + street + ", " + building + 
+                  ", " + app;
     }
       public Person (String serN, String name, String surname, 
-              String bd, String issD, String issOff){
+              String bd, String issD, String issOff, String country, String city,
+              String street, String building, String app){
           this.passport = new Passport(serN, name, surname, bd, issD, issOff);
           this.fullName = name + " " + surname;
+          this.address = country + ", " + city + ", " + street + ", " + building + 
+                  ", " + app;
       }
       public Person (String serN, String name, String surname, char secName, 
-              String bd, String issD, String issOff){
+              String bd, String issD, String issOff, String country, String city,
+              String street, String building, String app){
           this.passport = new Passport(serN, name, surname, secName, bd, issD, issOff);
           this.fullName = name + " " + secName + "." + " " + surname;
+          this.address = country + ", " + city + ", " + street + ", " + building + 
+                  ", " + app;
       }
     /**
      * Возврвщает полное имя человека.
