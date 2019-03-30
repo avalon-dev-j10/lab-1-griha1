@@ -11,14 +11,14 @@ public class Passport { // модификатор доступа паблик д
     случаях если второе имя тоже стринг, то типы и количество параметров
     совпадут и конструктор не перегрузится)
     */
-    String serAndNumb;
-    String name;
-    String surname;
-    String patroname;
-    char secName;
-    String birthDate;
-    String issueDate;
-    String issueOff;
+    private String serAndNumb;
+    private String name;
+    private String surname;
+    private String patroname;
+    private char secName;
+    private String birthDate;
+    private String issueDate;
+    private String issueOff;
     
     private Address registration;
     

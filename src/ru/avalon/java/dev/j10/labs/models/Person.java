@@ -8,9 +8,9 @@ public class Person {
     объявляем атрибуты класса, в их числе Полное имя и Адрес, которые
     инициализируются в классе Мэйн после создания объектов класса Персон 
     */
-      public String fullName;
-      public Passport passport; 
-      public Address address; 
+      private String fullName;
+      private Passport passport; 
+      private Address address; 
 
       public Person (String serN, String name, String surname, String patroname, 
               String bd, String issD, String issOff, String country, String city,
@@ -46,9 +46,9 @@ public class Person {
     public String getAddress() {
 
         return address.getCountry() + 
-                " " + address.getCity() + 
-                " " + address.getStreet() + 
-                " " + address.getBuilding() + 
-                " " + address.getApp() + ".";
+                ", " + address.getCity() + 
+                ", " + address.getStreet() + 
+                ", " + address.getBuilding() + 
+                ", " + address.getApp() + ".";
     }
 }

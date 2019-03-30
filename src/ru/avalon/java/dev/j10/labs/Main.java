@@ -4,10 +4,6 @@ import ru.avalon.java.dev.j10.labs.models.Person;
 
 public class Main {
 
-    /**
-     *
-     * @param args
-     */
     public static void main(String args []) {
 
         Person ivanov = new Person("4007 548521", "Иван", "Иванов", "Иванович",
